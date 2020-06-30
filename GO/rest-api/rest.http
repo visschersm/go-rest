@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:8080
+
+{{baseUrl}}
+
+###
+
+POST {{baseUrl}}/event HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "Advanced Golang Concepts",
+    "description": "Come and learn about the advanced concepts that will make you an expert in Go"
+}
+
+###
+
+GET {{baseUrl}}/event/2
